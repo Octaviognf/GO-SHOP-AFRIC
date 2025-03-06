@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Finaliser votre achat</h2>
+        <p id="product-info"></p>
+
+        <form id="paymentForm">
+            <label>Nom et prénom :</label>
+            <input type="text" id="name" required>
+
+            <label>Numéro de téléphone :</label>
+            <input type="tel" id="phone" required>
+
+            <label>Méthode de paiement :</label>
+            <select id="paymentMethod">
+                <option value="Mobile Money">📱 Mobile Money</option>
+                <option value="Orange Money">🍊 Orange Money</option>
+                <option value="Carte Bancaire">💳 Carte Bancaire</option>
+            </select>
+
+            <button type="submit">Envoyer la commande</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

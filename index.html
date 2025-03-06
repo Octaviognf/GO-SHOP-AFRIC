@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO SHOP AFRICA - Boutique en ligne</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <header>
+        <h1>GO SHOP AFRICA</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="Vidéo/vidéo.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas les vidéos.
+        </video>
+        <h1>Bienvenue sur notre boutique</h1>
+    </header>
+ 
+    <section class="marketing-arguments">
+        <div class="marketing-item">
+            <img src="image/image livraison.png" alt="Livraison rapide">
+            <h3>Livraison rapide</h3>
+            <p>Nous garantissons une livraison rapide, généralement dans les 24 à 48 heures après votre commande. Pas de longues attentes !</p>
+        </div>
+         
+        <div class="marketing-item">
+            <img src="image/image paiement.jpg" alt="Moyens de paiement variés">
+            <h3>Paiement à la livraison</h3>
+            <p>Payer à la livraison, un processus simple et sécurisé. Vous payez uniquement lorsque vous recevez vos produits.</p>
+        </div>
+    
+        <div class="marketing-item">
+            <img src="image/paiement 3fois.jpeg" alt="Paiement en plusieurs fois">
+            <h3>Paiement en 2 ou 3 fois</h3>
+            <p>Facilitez votre achat en choisissant le paiement en plusieurs fois. Payez en 2 ou 3 fois selon votre convenance !</p>
+        </div>
+    
+        <div class="marketing-item">
+            <img src="image/support client.jpeg" alt="Support client">
+            <h3>Support client 24/7</h3>
+            <p>Notre équipe est disponible 24/7 pour répondre à toutes vos questions et vous offrir l'assistance nécessaire.</p>
+        </div>
+    </section>
+    
+
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Recherchez un produit..." onkeyup="searchProduct()">
+    </div>
+  
+
+    <section id="home">
+        <h2>Bienvenue sur GO SHOP AFRICA</h2>
+        <p>Découvrez nos produits de beauté, de cuisine, d'électroménager et bien plus encore !
+            Livraison Gratuite partout au Bénin , Paiement à la livraion
+        </p>
+    </section>
+
+    <section id="products">
+        <h2>Nos Produits</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="image/produit 1 Pousse cappilaire.png" alt="posse cappilaire">
+                <h3>Pousse cheveux</h3>
+                <p>Prix: 7 000 FCFA</p>
+                <button onclick="redirigerPaiement('Pousse cheveux', '7000')">Commander</button>
+
+            </div>
+            <div class="product">
+                <img src="image/produit 2 ventilateur.png" alt="ventilateur">
+                <h3>Mini ventilateur électrique</h3>
+                <p>Prix: 9 000 FCFA</p>
+                <button onclick="redirigerPaiement('Mini ventilteur électrique', '9000')">Commander</button>
+
+            </div>
+            <div class="product">
+                <img src="image/produit 3 masseur de pied.avif" alt="masseur de pied">
+                <h3>Masseur de pied électrique</h3>
+                <p>Prix: 9 000 FCFA</p>
+                <button onclick="redirigerPaiement('Masseur de pied électrique', '9000')">Commander</button>
+
+            </div>
+            <div class="product">
+                <img src="image/produit 4 chaise pour bébé.avif" alt="chaise bébé">
+                <h3>Chaise pour BéBé</h3>
+                <p>Prix: 20 000 FCFA</p>
+                <button onclick="redirigerPaiement('Chaise pour BéBé', '20000')">Commander</button>
+
+            </div>
+            <div class="product">
+                <img src="image/produit 5 mini climatiseur.avif" alt="mini climatiseur ">
+                <h3>Mini Climatiseur portable</h3>
+                <p>Prix: 25 000 FCFA</p>
+                <button onclick="redirigerPaiement('Mini climatiseur portable', '25000')">Commander</button>
+
+            </div>
+            <div class="product">
+                <img src="image/produit 6 mini machine à laver.avif" alt="mini machine à laver">
+                <h3>Mini machine à laver</h3>
+                <p>Prix: 20 500 FCFA</p>
+                <button onclick="redirigerPaiement('Mini machine à laver', '20500')">Commander</button>
+
+            </div>
+            <div class="product">
+                <img src="image/produit 7 mini caméra cachée.avif" alt="produit 7">
+                <h3>Mini caméra cachée</h3>
+                <p>Prix: 14 000 FCFA</p>
+                <button onclick="redirigerPaiement('Mini caméra cachée', '14000')">Commander</button>
+
+            </div>
+            <div class="product">
+                <img src="image/produit 8 mini fer.avif" alt="produit 8">
+                <h3>Mini fer à repasser électrique </h3>
+                <p>Prix: 10 500 FCFA</p>
+                <button onclick="redirigerPaiement('Mini fer à repasser électrique', '10500')">Commander</button>
+        </div>
+    </section>
+
+    <a href="https://wa.me/22954561133" class="whatsapp-button" target="_blank">
+        💬 Chat WhatsApp
+    </a>
+    
+
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Chargement...</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 GO SHOP AFRICA - Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
